@@ -21,3 +21,7 @@ Our custom GNN design:
   - Atom charge, degree, and hybridization
   - Bond type, stereo configuration
   - Ring and conjugation information
+
+## Comparison to classical ML models
+Our research involved training classical ML models on molecular data (KNN, Tree-based boosting models, SVMs). 
+As a result of comparative analysis, GNN was shown to be the best model overall for multi-task property prediction.

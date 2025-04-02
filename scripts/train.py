@@ -194,7 +194,7 @@ def test_model():
     all_y_true = torch.cat(all_y_true, dim=0).numpy()
     all_y_pred = torch.cat(all_y_pred, dim=0).numpy()
 
-    # Compute the R² score for each target on the aggregated data
+    # Compute the R2 score for each target on the aggregated data
     total_r2 = {}
     for i in range(all_y_true.shape[1]):
         r2 = r2_score(all_y_true[:, i], all_y_pred[:, i])
