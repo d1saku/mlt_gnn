@@ -1,0 +1,33 @@
+# default_config.yaml
+training:
+  n_epochs: 150
+  batch_size: 32
+  learning_rate: 0.001
+  dropout_rate: 0.3
+  targets: ['Absorption max (nm)', 'Emission max (nm)', 'Lifetime (ns)', 'Quantum yield']
+
+loss_function:
+  discount: 0.6
+  decay: 0.8
+
+split:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+paths:
+  dataset_path: "dataset/processed"
+  dataset_name: "prep2.csv"
+  model_save_path: "saved_models/mlt_graph.pth"
+  do_splitting: false
+  train_dataset_name: "train.csv"
+  val_dataset_name: "validation.csv"
+  test_dataset_name: "test.csv"
+
+model:
+  node_feature_dim: 128
+  edge_feature_dim: 128
+  output_dim: 4
+
+device:
+  use_cuda: true

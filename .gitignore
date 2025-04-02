@@ -1,0 +1,10 @@
+notebooks/
+dataset/
+saved_models/
+
+*.ipynb
+*.csv
+*.json
+*.pth
+
+__pycache__/
