@@ -10,7 +10,9 @@ The primary goal is to perform multi-task regression, predicting the following k
 -   Fluorescence Quantum Yield
 -   Fluorescence Lifetime (ns)
 
-The core of the project is a hybrid model that processes chromophores as molecular graphs and solvents using their chemical fingerprints.
+The core of the project is a hybrid model that processes chromophores as molecular graphs and solvents using their chemical fingerprints. We then fine-tune generative model on our dataset, and try to predict chemical properties of de-novo generate molecules.
+
+![Exaple of a chromophore: ](images/screenshot.png)
 
 ## Features
 
